@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"dashboard":"dashboard","profile":"profile"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"dashboard":"dashboard","profile":"profile","users":"users"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -52738,6 +52738,12 @@ var routes = [{
   // which is lazy-loaded when the route is visited.
   component: function component() {
     return __webpack_require__.e(/*! import() | profile */ "profile").then(__webpack_require__.bind(null, /*! ./../views/Profile.vue */ "./resources/js/views/Profile.vue"));
+  }
+}, {
+  path: "/users",
+  name: "Users",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | users */ "users").then(__webpack_require__.bind(null, /*! ./../views/Users.vue */ "./resources/js/views/Users.vue"));
   }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
